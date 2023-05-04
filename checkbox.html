@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>ExercicioJs4</title>
+</head>
+<script>
+    function funcao(){
+        var n = document.querySelectorAll('input[type="checkbox"]:checked').length;
+        if (n>=2){
+            document.getElementById("botao").disabled = false;
+        }
+        else{
+            document.getElementById("botao").disabled = true;
+        }
+    }
+    function funcao1(){
+        alert("Botão apertado com sucesso");
+    }
+</script>
+<body>
+    <input type="checkbox" id="checkbox1" onchange="funcao()">1
+    <input type="checkbox" id="checkbox2" onchange="funcao()">2
+    <input type="checkbox" id="checkbox3" onchange="funcao()">3
+    <input type="checkbox" id="checkbox4" onchange="funcao()">4
+
+    <button id="botao" onclick="funcao1()"disabled>Botao</button>
+</body>
+</html>

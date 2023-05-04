@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>ExercicioJs3</title>
+</head>
+<script>
+    function funcao(){
+        var texto = document.getElementById("texto");
+        if (texto.style.display === "none"){
+            texto.style.display = "block";
+        }
+        else{
+            texto.style.display = "none";
+        }
+
+    }
+</script>
+<body>
+    <p id="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus eros at enim porta sollicitudin. Suspendisse mollis accumsan mattis. Aliquam a euismod massa, vel feugiat nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam hendrerit, ante nec sagittis accumsan, nunc neque suscipit felis, nec tempor urna urna nec nulla. Nunc id tellus volutpat, elementum risus eget, pellentesque purus. Donec tempus nisi velit, et condimentum nisl pellentesque a. Etiam condimentum consectetur tincidunt.</p>
+    <button onclick="funcao()">Esconder Parágrafo</button>
+</body>
+</html>

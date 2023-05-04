@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<script>
+    function funcao1(){
+        var texto = document.getElementById("texto");
+        texto.style.backgroundColor = "black";
+    }
+    function funcao2(){
+        var texto = document.getElementById("texto");
+        texto.style.backgroundColor = "white";
+    }
+    function funcao3(){
+        var texto = document.getElementById("texto");
+        texto.style.color = "white";
+    }
+    function funcao4(){
+        var texto = document.getElementById("texto");
+        texto.style.color = "black";
+    }
+    function funcao5(){
+        var texto = document.getElementById("texto");
+        var fonte = window.getComputedStyle(texto).getPropertyValue('font-size');
+        var fontema = parseInt(fonte) + 2;
+        texto.style.fontSize = fontema + "px";
+    }
+    function funcao6(){
+        var texto = document.getElementById("texto");
+        var fonte = window.getComputedStyle(texto).getPropertyValue('font-size');
+        var fonteme = parseInt(fonte) - 2;
+        texto.style.fontSize = fonteme + "px";
+    }
+    function funcao7(){
+        var texto = document.getElementById("texto");
+        var textoma =  texto.textContent.toUpperCase();
+        texto.textContent = textoma; 
+    }
+    function funcao8(){
+        var texto = document.getElementById("texto");
+        var textome =  texto.textContent.toLowerCase();
+        texto.textContent = textome; 
+    }
+</script>
+<body>
+    <p id="texto">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet facilisis diam, ut porta justo. Fusce congue augue non metus viverra, eu mollis nulla suscipit. Fusce eget gravida nulla. Nam congue euismod faucibus. Nunc lacinia erat sed urna ornare egestas eget blandit est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis pretium ex. Aenean pellentesque metus sem. Curabitur auctor quis nunc vel rhoncus. In nec aliquam nunc. Vestibulum iaculis felis ac nulla lobortis, eu hendrerit massa blandit. Etiam sodales tellus ut interdum commodo. Aenean et ante urna. Curabitur congue suscipit sem, nec egestas erat bibendum at.</p>
+
+    <button onclick="funcao1()">Mudar cor do fundo para preto.</button>
+    <button onclick="funcao2()">Mudar cor do fundo para branco.</button>
+    <button onclick="funcao3()">Mudar cor da letra para branco.</button>
+    <button onclick="funcao4()">Mudar cor da letra para preto.</button>
+    <button onclick="funcao5()">+</button>
+    <button onclick="funcao6()">-</button>
+    <button onclick="funcao7()">A</button>
+    <button onclick="funcao8()">a</button>
+
+
+
+</body>
+</html>

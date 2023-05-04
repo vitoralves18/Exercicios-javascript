@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>Login</title>
+</head>
+<script>
+    function funcao(){
+        var senha = document.getElementById("senha").value;
+        var nsenha = senha.length;
+        var csenha = document.getElementById("csenha").value;
+        var usuario = document.getElementById("usuario");
+
+
+
+        if (usuario == "" || senha == "" || csenha == ""){
+            alert("preencha todos os campos")
+        }
+        else if (nsenha < 6 || nsenha > 10){
+            alert("Senha inválida, favor inserir de 6 a 10 caracteres.");
+        }
+        else if (senha !== csenha){
+            alert("As senhas não coincidem.");
+        }
+        else{
+            alert("Cadastro efetuado com sucesso!");
+        }
+
+    }
+</script>
+<body>
+    <label for="nome">Usuário:</label>
+    <input type="text" id="usuario" name="usuario" required>
+    <br><br>
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required>
+    <br><br>
+    <label for="csenha">Confirmar senha:</label>
+    <input type="password" id="csenha" name="csenha" required>
+    <br><br>
+    <button type="submit" onclick="funcao()">Enviar</button>
+</body>
+</html>
